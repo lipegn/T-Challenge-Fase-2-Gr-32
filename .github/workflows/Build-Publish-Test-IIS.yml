@@ -25,5 +25,5 @@ jobs:
     - name: Build
       run: dotnet build --no-restore C:\FIAP\T-Challenge-Fase-2-Gr-32\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
     - name: Copiar arquivos para pasta do IIS
-    - uses: bash
+      uses: bash
       run: copy .\* C:\inetpub\wwwroot\CadastroContatos\
