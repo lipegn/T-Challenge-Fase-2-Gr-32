@@ -1,0 +1,9 @@
+Š
+>TechChallangeCadastroContatosAPI.Controllers.ContatoController'Microsoft.AspNetCore.Mvc.ControllerBaseobject­
+5ContatoController(Core.Repository.IContatoRepository)tTechChallangeCadastroContatosAPI.Controllers.ContatoController.ContatoController(Core.Repository.IContatoRepository)M
+Get()DTechChallangeCadastroContatosAPI.Controllers.ContatoController.Get()S
+Get(int)GTechChallangeCadastroContatosAPI.Controllers.ContatoController.Get(int)_
+GetPorDDD(int)MTechChallangeCadastroContatosAPI.Controllers.ContatoController.GetPorDDD(int)}
+Post(Core.Input.ContatoInput)\TechChallangeCadastroContatosAPI.Controllers.ContatoController.Post(Core.Input.ContatoInput)‡
+"Put(Core.Input.ContatoUpdateInput)aTechChallangeCadastroContatosAPI.Controllers.ContatoController.Put(Core.Input.ContatoUpdateInput)Y
+Delete(int)JTechChallangeCadastroContatosAPI.Controllers.ContatoController.Delete(int)

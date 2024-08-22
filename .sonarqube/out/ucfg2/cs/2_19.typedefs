@@ -1,0 +1,4 @@
+’
+:TechChallangeCadastroContatosAPI.Middlewares.LogMiddlewareobject¯
+8LogMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)sTechChallangeCadastroContatosAPI.Middlewares.LogMiddleware.LogMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)™
+-Invoke(Microsoft.AspNetCore.Http.HttpContext)hTechChallangeCadastroContatosAPI.Middlewares.LogMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)

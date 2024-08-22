@@ -1,0 +1,548 @@
+€
+Core.Entity.Contato.Contato()D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ("0*V
+0:
+8
+
+%0void"object.Object()*
+Core.Entity.Contato"
+implicit returnB
+Core.Entity.ContatoXÕ
+Core.Utils.Utils.Utils()A
+7C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Utils\Utils.cs ("0*S
+07
+5
+
+%0void"object.Object()*
+Core.Utils.Utils"
+implicit returnB
+Core.Utils.UtilsX
+&Core.Input.ContatoInput.ContatoInput()H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs ("0*Z
+0>
+<
+
+%0void"object.Object()*
+Core.Input.ContatoInput"
+implicit returnB
+Core.Input.ContatoInputXé
+2Core.Input.ContatoUpdateInput.ContatoUpdateInput()N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (#"0*`
+0D
+B
+
+%0void"object.Object()*#!
+Core.Input.ContatoUpdateInput"
+implicit returnB!
+Core.Input.ContatoUpdateInputXÊ
+"Core.Input.LoginInput.LoginInput()F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs ("0*X
+0<
+:
+
+%0void"object.Object()*
+Core.Input.LoginInput"
+implicit returnB
+Core.Input.LoginInputX¥
+Core.Entity.Contato.Id.getD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ("0*±
+0 ( 
+«
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs (
+%retint"__id*l
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ($*"
+Core.Entity.Contato"	
+Idint"U
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs (
+
+%retintB
+Core.Entity.ContatoX”
+!Core.Input.LoginInput.Usuario.getF
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs	) 	(,"0*«
+0	- 	(-€
+ÿ
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs	) 	(,
+%retstring"__id*x
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs	) 	(,.*,
+Core.Input.LoginInput"
+Usuariostring"Z
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs	) 	(,
+
+%retstringB
+Core.Input.LoginInput€
+ Core.Input.ContatoInput.Nome.getH
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs	& 	()"0*Ã
+0	* 	(*ﬁ
+€
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs	& 	()
+%retstring"__id*y
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs	& 	()-*+
+Core.Input.ContatoInput"
+Nomestring"\
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs	& 	()
+
+%retstringB
+Core.Input.ContatoInput§
+!Core.Input.LoginInput.Usuario.setF
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs	. 	(1"0*É
+0	2 	(2î
+ë
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs	. 	(1,
+Core.Input.LoginInput"
+Usuariostring"__id*
+
+valuestring"]
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs	. 	(1
+implicit return:
+valuestringB
+Core.Input.LoginInputX™
+ Core.Input.ContatoInput.Nome.setH
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs	+ 	(."0*Ü
+0	/ 	(/ï
+í
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs	+ 	(.+
+Core.Input.ContatoInput"
+Nomestring"__id*
+
+valuestring"_
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs	+ 	(.
+implicit return:
+valuestringB
+Core.Input.ContatoInputX“
+Core.Input.ContatoInput.DDD.getH
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs ("0*¬
+0 (◊
+‘
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs (
+%retint"__id*u
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs ()*'
+Core.Input.ContatoInput"
+
+DDDint"Y
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs (
+
+%retintB
+Core.Input.ContatoInputXœ
+Core.Input.LoginInput.Senha.getF
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs' (*"0*≈
+0+ (+Ÿ
+÷
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs' (*
+%retstring"__id*v
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs' (*,**
+Core.Input.LoginInput"
+Senhastring"Z
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs' (*
+
+%retstringB
+Core.Input.LoginInput†
+Core.Input.LoginInput.Senha.setF
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs, (/"0*Å
+00 (0í
+è
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs, (/*
+Core.Input.LoginInput"
+Senhastring"__id*
+
+valuestring"]
+F
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs, (/
+implicit return:
+valuestringB
+Core.Input.LoginInputX„
+$Core.Input.ContatoInput.Telefone.getH
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs! ($"0*–
+0% (%‚
+ﬂ
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs! ($
+%retstring"__id*}
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs! ($1*/
+Core.Input.ContatoInput"
+Telefonestring"\
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs! ($
+
+%retstringB
+Core.Input.ContatoInputü
+Core.Input.ContatoInput.DDD.setH
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs (!"0*ˇ
+0" ("é
+ã
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs (!'
+Core.Input.ContatoInput"
+
+DDDint"__id*
+
+valueint"_
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs (!
+implicit return:
+valueintB
+Core.Input.ContatoInputX≤
+$Core.Input.ContatoInput.Telefone.setH
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs& ()"0*ä
+0* (*ô
+ñ
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs& ()/
+Core.Input.ContatoInput"
+Telefonestring"__id*
+
+valuestring"_
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs& ()
+implicit return:
+valuestringB
+Core.Input.ContatoInputX›
+!Core.Input.ContatoInput.Email.getH
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs (!"0*Õ
+0" ("ﬂ
+‹
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs (!
+%retstring"__id*z
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs (!.*,
+Core.Input.ContatoInput"
+Emailstring"\
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs (!
+
+%retstringB
+Core.Input.ContatoInput¨
+!Core.Input.ContatoInput.Email.setH
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs# (&"0*á
+0' ('ñ
+ì
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs# (&,
+Core.Input.ContatoInput"
+Emailstring"__id*
+
+valuestring"_
+H
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs# (&
+implicit return:
+valuestringB
+Core.Input.ContatoInputXÖ
+Core.Entity.Contato.Id.setD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ( "0*Ú
+0! (!Ö
+Ç
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ( "
+Core.Entity.Contato"	
+Idint"__id*
+
+valueint"[
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ( 
+implicit return:
+valueintB
+Core.Entity.ContatoXø
+Core.Entity.Contato.Nome.getD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ( "0*º
+0! (!“
+œ
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ( 
+%retstring"__id*q
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ( )*'
+Core.Entity.Contato"
+Nomestring"X
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs ( 
+
+%retstringB
+Core.Entity.Contatoí
+Core.Entity.Contato.Nome.setD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs" (%"0*˙
+0& (&ç
+ä
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs" (%'
+Core.Entity.Contato"
+Nomestring"__id*
+
+valuestring"[
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs" (%
+implicit return:
+valuestringB
+Core.Entity.ContatoX∂
+Core.Entity.Contato.DDD.getD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs" (%"0*≤
+0& (&À
+»
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs" (%
+%retint"__id*m
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs" (%%*#
+Core.Entity.Contato"
+
+DDDint"U
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs" (%
+
+%retintB
+Core.Entity.ContatoXá
+Core.Entity.Contato.DDD.setD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs' (*"0*Û
+0+ (+Ü
+É
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs' (*#
+Core.Entity.Contato"
+
+DDDint"__id*
+
+valueint"[
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs' (*
+implicit return:
+valueintB
+Core.Entity.ContatoX¿
+ Core.Entity.Contato.Telefone.getD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs (!"0*∑
+0" ("–
+Õ
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs (!
+%retint"__id*r
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs (!**(
+Core.Entity.Contato"
+Telefoneint"U
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs (!
+
+%retintB
+Core.Entity.ContatoXë
+ Core.Entity.Contato.Telefone.setD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs# (&"0*¯
+0' ('ã
+à
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs# (&(
+Core.Entity.Contato"
+Telefoneint"__id*
+
+valueint"[
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs# (&
+implicit return:
+valueintB
+Core.Entity.ContatoX¡
+Core.Entity.Contato.Email.getD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs	 	(!"0*Ω
+0	" 	("”
+–
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs	 	(!
+%retstring"__id*r
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs	 	(!**(
+Core.Entity.Contato"
+Emailstring"X
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs	 	(!
+
+%retstringB
+Core.Entity.Contatoî
+Core.Entity.Contato.Email.setD
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs	# 	(&"0*˚
+0	' 	('é
+ã
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs	# 	(&(
+Core.Entity.Contato"
+Emailstring"__id*
+
+valuestring"[
+D
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs	# 	(&
+implicit return:
+valuestringB
+Core.Entity.ContatoX˚
+$Core.Input.ContatoUpdateInput.Id.getN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs ("0*⁄
+0 (È
+Ê
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (
+%retint"__id*Ä
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (.*,
+Core.Input.ContatoUpdateInput"	
+Idint"_
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (
+
+%retintB!
+Core.Input.ContatoUpdateInputX¡
+$Core.Input.ContatoUpdateInput.Id.setN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs ( "0*ê
+0! (!ô
+ñ
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs ( ,
+Core.Input.ContatoUpdateInput"	
+Idint"__id*
+
+valueint"e
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs ( 
+implicit return:
+valueintB!
+Core.Input.ContatoUpdateInputXÜ
+&Core.Input.ContatoUpdateInput.Nome.getN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs& ()"0*Â
+0* (*Ò
+Ó
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs& ()
+%retstring"__id*Ö
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs& ()3*1
+Core.Input.ContatoUpdateInput"
+Nomestring"b
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs& ()
+
+%retstringB!
+Core.Input.ContatoUpdateInputŒ
+&Core.Input.ContatoUpdateInput.Nome.setN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs+ (."0*ò
+0/ (/°
+û
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs+ (.1
+Core.Input.ContatoUpdateInput"
+Nomestring"__id*
+
+valuestring"e
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs+ (.
+implicit return:
+valuestringB!
+Core.Input.ContatoUpdateInputX˝
+%Core.Input.ContatoUpdateInput.DDD.getN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs ("0*€
+0 (Í
+Á
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (
+%retint"__id*Å
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (/*-
+Core.Input.ContatoUpdateInput"
+
+DDDint"_
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (
+
+%retintB!
+Core.Input.ContatoUpdateInputXé
+*Core.Input.ContatoUpdateInput.Telefone.getN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs! ($"0*È
+0% (%ı
+Ú
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs! ($
+%retstring"__id*â
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs! ($7*5
+Core.Input.ContatoUpdateInput"
+Telefonestring"b
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs! ($
+
+%retstringB!
+Core.Input.ContatoUpdateInput÷
+*Core.Input.ContatoUpdateInput.Telefone.setN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs& ()"0*ú
+0* (*•
+¢
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs& ()5
+Core.Input.ContatoUpdateInput"
+Telefonestring"__id*
+
+valuestring"e
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs& ()
+implicit return:
+valuestringB!
+Core.Input.ContatoUpdateInputXà
+'Core.Input.ContatoUpdateInput.Email.getN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (!"0*Ê
+0" ("Ú
+Ô
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (!
+%retstring"__id*Ü
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (!4*2
+Core.Input.ContatoUpdateInput"
+Emailstring"b
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (!
+
+%retstringB!
+Core.Input.ContatoUpdateInput–
+'Core.Input.ContatoUpdateInput.Email.setN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs# (&"0*ô
+0' ('¢
+ü
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs# (&2
+Core.Input.ContatoUpdateInput"
+Emailstring"__id*
+
+valuestring"e
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs# (&
+implicit return:
+valuestringB!
+Core.Input.ContatoUpdateInputX√
+%Core.Input.ContatoUpdateInput.DDD.setN
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (!"0*ë
+0" ("ö
+ó
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (!-
+Core.Input.ContatoUpdateInput"
+
+DDDint"__id*
+
+valueint"e
+N
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs (!
+implicit return:
+valueintB!
+Core.Input.ContatoUpdateInputX

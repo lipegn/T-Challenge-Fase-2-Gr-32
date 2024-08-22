@@ -1,0 +1,10 @@
+﻿C:\FIAP\GitAct\FiapChallengeGrupo32\Test\Integração\IntegracaoAPI.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\Test\Unitario\ContatoControllerTest.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\Test\Unitario\ContatoInputTest.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\Test\Unitario\ContatoUpdateInputTest.cs
+C:\Users\lipeg\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\lipeg\.nuget\packages\microsoft.testplatform.testhost\17.8.0\build\netcoreapp3.1\x64\testhost.exe
+C:\Users\lipeg\.nuget\packages\microsoft.testplatform.testhost\17.8.0\build\netcoreapp3.1\x64\testhost.dll
+C:\Users\lipeg\.nuget\packages\xunit.runner.visualstudio\2.5.3\build\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\lipeg\.nuget\packages\xunit.runner.visualstudio\2.5.3\build\net6.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\lipeg\.nuget\packages\xunit.runner.visualstudio\2.5.3\build\net6.0\xunit.runner.utility.netcoreapp10.dll

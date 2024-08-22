@@ -1,0 +1,11 @@
+Y
+NC:\FIAP\GitAct\FiapChallengeGrupo32\Core\obj\Debug\net8.0\Core.AssemblyInfo.csutf-8s
+hC:\FIAP\GitAct\FiapChallengeGrupo32\Core\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8[
+PC:\FIAP\GitAct\FiapChallengeGrupo32\Core\obj\Debug\net8.0\Core.GlobalUsings.g.csutf-8@
+7C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Utils\Utils.csutf-8K
+BC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Repository\IRepository.csutf-8R
+IC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Repository\IContatoRepository.csutf-8E
+<C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.csutf-8M
+DC:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.csutf-8G
+>C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.csutf-8C
+:C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.csutf-8

@@ -1,0 +1,9 @@
+Y
+NC:\FIAP\GitAct\FiapChallengeGrupo32\Test\obj\Debug\net8.0\Test.AssemblyInfo.csutf-8s
+hC:\FIAP\GitAct\FiapChallengeGrupo32\Test\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8[
+PC:\FIAP\GitAct\FiapChallengeGrupo32\Test\obj\Debug\net8.0\Test.GlobalUsings.g.csutf-8}
+rC:\Users\lipeg\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.csutf-8T
+KC:\FIAP\GitAct\FiapChallengeGrupo32\Test\Unitario\ContatoUpdateInputTest.csutf-8N
+EC:\FIAP\GitAct\FiapChallengeGrupo32\Test\Unitario\ContatoInputTest.csutf-8S
+JC:\FIAP\GitAct\FiapChallengeGrupo32\Test\Unitario\ContatoControllerTest.csutf-8O
+FC:\FIAP\GitAct\FiapChallengeGrupo32\Test\Integração\IntegracaoAPI.csutf-8

@@ -1,0 +1,13 @@
+﻿C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\Controllers\ContatoController.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\Controllers\LoginController.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\Middlewares\LogMiddleware.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\Program.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\obj\Debug\net8.0\TechChallangeCadastroContatosAPI.GlobalUsings.g.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\obj\Debug\net8.0\TechChallangeCadastroContatosAPI.AssemblyInfo.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\obj\Debug\net8.0\TechChallangeCadastroContatosAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\appsettings.Development.json
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\appsettings.json
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\libman.json
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\TechChallangeCadastroCotatos.http
+C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\Properties\launchSettings.json

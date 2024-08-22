@@ -1,0 +1,13 @@
+ƒ
+Core.Input.ContatoUpdateInputobjectJ
+ContatoUpdateInput()2Core.Input.ContatoUpdateInput.ContatoUpdateInput().
+Id.get$Core.Input.ContatoUpdateInput.Id.get.
+Id.set$Core.Input.ContatoUpdateInput.Id.set2
+Nome.get&Core.Input.ContatoUpdateInput.Nome.get2
+Nome.set&Core.Input.ContatoUpdateInput.Nome.set0
+DDD.get%Core.Input.ContatoUpdateInput.DDD.get0
+DDD.set%Core.Input.ContatoUpdateInput.DDD.set:
+Telefone.get*Core.Input.ContatoUpdateInput.Telefone.get:
+Telefone.set*Core.Input.ContatoUpdateInput.Telefone.set4
+	Email.get'Core.Input.ContatoUpdateInput.Email.get4
+	Email.set'Core.Input.ContatoUpdateInput.Email.set

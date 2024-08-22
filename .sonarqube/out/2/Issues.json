@@ -1,0 +1,333 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.10.0.0",
+        "fileVersion": "4.10.0-3.24314.14 (259e82e9)",
+        "semanticVersion": "4.10.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S6781",
+          "level": "warning",
+          "message": "JWT secret keys should not be disclosed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/LoginController.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 106
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6968",
+          "level": "warning",
+          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/LoginController.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 30,
+                  "endLine": 20,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/LoginController.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 28,
+                  "endLine": 37,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6968",
+          "level": "warning",
+          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 30,
+                  "endLine": 77,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 24,
+                  "endLine": 82,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6968",
+          "level": "warning",
+          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 30,
+                  "endLine": 53,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 24,
+                  "endLine": 58,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6968",
+          "level": "warning",
+          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 30,
+                  "endLine": 29,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 24,
+                  "endLine": 34,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6968",
+          "level": "warning",
+          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 30,
+                  "endLine": 113,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 28,
+                  "endLine": 127,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6968",
+          "level": "warning",
+          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 30,
+                  "endLine": 163,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Controllers/ContatoController.cs",
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 28,
+                  "endLine": 175,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/TechChallangeCadastroCotatos/Program.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 1,
+                  "endLine": 86,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S6781": {
+          "id": "S6781",
+          "shortDescription": "JWT secret keys should not be disclosed",
+          "fullDescription": "Secret leaks often occur when a sensitive piece of authentication data is stored with the source code of an application. Considering the source code is intended to be deployed across multiple assets, including source code repositories or application hosting servers, the secrets might get exposed to an unintended audience.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6781",
+          "properties": {
+            "category": "Blocker Vulnerability",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6968": {
+          "id": "S6968",
+          "shortDescription": "Actions that return a value should be annotated with ProducesResponseTypeAttribute containing the return type",
+          "fullDescription": "In an ASP.NET Core Web API, controller actions can optionally return a result value. If a controller action returns a value in the happy path, for example ControllerBase.Ok(Object), annotating the action with one of the [ProducesResponseType] overloads that describe the type is recommended.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6968",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

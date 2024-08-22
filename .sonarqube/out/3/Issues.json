@@ -1,0 +1,494 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.10.0.0",
+        "fileVersion": "4.10.0-3.24314.14 (259e82e9)",
+        "semanticVersion": "4.10.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoUpdateInputTest.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 57,
+                  "endLine": 37,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoUpdateInputTest.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 57,
+                  "endLine": 53,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoUpdateInputTest.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 57,
+                  "endLine": 69,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoUpdateInputTest.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 57,
+                  "endLine": 84,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoUpdateInputTest.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 57,
+                  "endLine": 100,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoUpdateInputTest.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 57,
+                  "endLine": 115,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoUpdateInputTest.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 57,
+                  "endLine": 131,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 57,
+                  "endLine": 43,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 57,
+                  "endLine": 58,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 57,
+                  "endLine": 73,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 57,
+                  "endLine": 86,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 57,
+                  "endLine": 101,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 57,
+                  "endLine": 115,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 57,
+                  "endLine": 130,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "xUnit1013",
+          "level": "warning",
+          "message": "Public method 'ContatoInput_DeveRetornarErro_QuandoOContatoImputForChamadoSemOTelefone' on test class 'ContatoInputTest' should be marked as a Fact. Reduce the visibility of the method, or add a Fact attribute to the method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 21,
+                  "endLine": 76,
+                  "endColumn": 92
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'BuscarToken' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Integra%C3%A7%C3%A3o/IntegracaoAPI.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 28,
+                  "endLine": 23,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'ValidateModel' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoUpdateInputTest.cs",
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 41,
+                  "endLine": 134,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1859",
+          "level": "note",
+          "message": "Change return type of method 'ValidateModel' from 'System.Collections.Generic.IList<System.ComponentModel.DataAnnotations.ValidationResult>' to 'System.Collections.Generic.List<System.ComponentModel.DataAnnotations.ValidationResult>' for improved performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoUpdateInputTest.cs",
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 41,
+                  "endLine": 134,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'ValidateModel' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 41,
+                  "endLine": 136,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1859",
+          "level": "note",
+          "message": "Change return type of method 'ValidateModel' from 'System.Collections.Generic.IList<System.ComponentModel.DataAnnotations.ValidationResult>' to 'System.Collections.Generic.List<System.ComponentModel.DataAnnotations.ValidationResult>' for improved performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/FIAP/GitAct/FiapChallengeGrupo32/Test/Unitario/ContatoInputTest.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 41,
+                  "endLine": 136,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1859": {
+          "id": "CA1859",
+          "shortDescription": "Use concrete types when possible for improved performance",
+          "fullDescription": "Using concrete types avoids virtual or interface call overhead and enables inlining.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1859",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Dereference of a possibly null reference.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "xUnit1013": {
+          "id": "xUnit1013",
+          "shortDescription": "Public method should be marked as test",
+          "defaultLevel": "warning",
+          "helpUri": "https://xunit.net/xunit.analyzers/rules/xUnit1013",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true
+          }
+        }
+      }
+    }
+  ]
+}

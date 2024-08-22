@@ -1,0 +1,9 @@
+°
+ïC:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\obj\Debug\net8.0\TechChallangeCadastroContatosAPI.MvcApplicationPartsAssemblyInfo.csutf-8é
+ÇC:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\obj\Debug\net8.0\TechChallangeCadastroContatosAPI.AssemblyInfo.csutf-8å
+ÄC:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8ê
+ÑC:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\obj\Debug\net8.0\TechChallangeCadastroContatosAPI.GlobalUsings.g.csutf-8[
+KC:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\Program.cswindows-1252f
+]C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\Middlewares\LogMiddleware.csutf-8h
+_C:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\Controllers\LoginController.csutf-8j
+aC:\FIAP\GitAct\FiapChallengeGrupo32\TechChallangeCadastroCotatos\Controllers\ContatoController.csutf-8

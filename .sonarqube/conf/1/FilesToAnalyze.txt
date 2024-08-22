@@ -1,0 +1,7 @@
+﻿C:\FIAP\GitAct\FiapChallengeGrupo32\Infrastructure\Configuration\ContatoConfiguration.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\Infrastructure\Migrations\20240804181520_PrimeiraMigration.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\Infrastructure\Migrations\20240804181520_PrimeiraMigration.Designer.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\Infrastructure\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\Infrastructure\Repository\ApplicationDbContext.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\Infrastructure\Repository\ContatoRepository.cs
+C:\FIAP\GitAct\FiapChallengeGrupo32\Infrastructure\Repository\EFRepository.cs
