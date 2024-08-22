@@ -14,7 +14,7 @@ namespace Core.Input
 
         [Required(ErrorMessage = "Campo telefone é obrigatório")]
         [StringLength(9, ErrorMessage = "Campo telefone deve ter no máximo 9 caracteres")]
-        public string Telefone { get; set; }
+        public string Telefone { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Campo e-mail é obrigatório")]
         [EmailAddress(ErrorMessage = "Campo e-mail inválido")]
