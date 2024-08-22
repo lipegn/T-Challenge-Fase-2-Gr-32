@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore .\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
     - name: Build
-      run: dotnet build --configuration Release --no-restore C:\FIAP\T-Challenge-Fase-2-Gr-32\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
+      run: dotnet build --configuration Release --no-restore .\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
     - name: Copiar arquivos para pasta do IIS
-      run: copy C:\FIAP\T-Challenge-Fase-2-Gr-32\TechChallangeCadastroCotatos\bin\Release\net8.0\* C:\inetpub\wwwroot\CadastroContatos\
+      run: copy .\TechChallangeCadastroCotatos\bin\Release\net8.0\* C:\inetpub\wwwroot\CadastroContatos\
