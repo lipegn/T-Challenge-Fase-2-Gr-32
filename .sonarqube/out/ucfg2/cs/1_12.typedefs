@@ -1,10 +1,0 @@
-¶
-)Infrastructure.Repository.EFRepository<T>objectCore.Repository.IRepository<T>¦
-<EFRepository(Infrastructure.Repository.ApplicationDbContext)fInfrastructure.Repository.EFRepository<T>.EFRepository(Infrastructure.Repository.ApplicationDbContext)B
-
-Alterar(T)4Infrastructure.Repository.EFRepository<T>.Alterar(T)F
-Cadastrar(T)6Infrastructure.Repository.EFRepository<T>.Cadastrar(T)F
-Deletar(int)6Infrastructure.Repository.EFRepository<T>.Deletar(int)N
-ObterPorDDD(int):Infrastructure.Repository.EFRepository<T>.ObterPorDDD(int)L
-ObterPorId(int)9Infrastructure.Repository.EFRepository<T>.ObterPorId(int)F
-ObterTodos()6Infrastructure.Repository.EFRepository<T>.ObterTodos()

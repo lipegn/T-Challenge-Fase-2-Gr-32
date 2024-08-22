@@ -1,7 +1,0 @@
-﻿C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Entity\Contato.cs
-C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoInput.cs
-C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\ContatoUpdateInput.cs
-C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Input\LoginInput.cs
-C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Repository\IContatoRepository.cs
-C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Repository\IRepository.cs
-C:\FIAP\GitAct\FiapChallengeGrupo32\Core\Utils\Utils.cs

@@ -1,7 +1,0 @@
-“
-Core.Input.LoginInputobject2
-LoginInput()"Core.Input.LoginInput.LoginInput()0
-Usuario.get!Core.Input.LoginInput.Usuario.get0
-Usuario.set!Core.Input.LoginInput.Usuario.set,
-	Senha.getCore.Input.LoginInput.Senha.get,
-	Senha.setCore.Input.LoginInput.Senha.set

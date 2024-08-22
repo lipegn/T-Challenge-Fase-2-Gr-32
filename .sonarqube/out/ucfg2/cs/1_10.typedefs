@@ -1,4 +1,0 @@
-Ü
-1Infrastructure.Configuration.ContatoConfigurationobject?Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>ù
-aConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Core.Entity.Contato>)“Infrastructure.Configuration.ContatoConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Core.Entity.Contato>)b
-ContatoConfiguration()HInfrastructure.Configuration.ContatoConfiguration.ContatoConfiguration()

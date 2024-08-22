@@ -1,13 +1,0 @@
-õ
-Core.Entity.Contatoobject*
-	Contato()Core.Entity.Contato.Contato()$
-Id.getCore.Entity.Contato.Id.get$
-Id.setCore.Entity.Contato.Id.set(
-Nome.getCore.Entity.Contato.Nome.get(
-Nome.setCore.Entity.Contato.Nome.set&
-DDD.getCore.Entity.Contato.DDD.get&
-DDD.setCore.Entity.Contato.DDD.set0
-Telefone.get Core.Entity.Contato.Telefone.get0
-Telefone.set Core.Entity.Contato.Telefone.set*
-	Email.getCore.Entity.Contato.Email.get*
-	Email.setCore.Entity.Contato.Email.set
