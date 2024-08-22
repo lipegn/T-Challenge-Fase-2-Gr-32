@@ -23,4 +23,5 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore C:\FIAP\T-Challenge-Fase-2-Gr-32\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
     - name: Build
+      working-directory: ./app
       run: dotnet build --no-restore C:\FIAP\T-Challenge-Fase-2-Gr-32\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
