@@ -21,11 +21,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore C:\FIAP\T-Challenge-Fase-2-Gr-32\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
+      run: dotnet restore .\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
     - name: Build
-      run: dotnet build --no-restore C:\FIAP\T-Challenge-Fase-2-Gr-32\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
+      run: dotnet build --configuration Release --no-restore .\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
     - name: Copiar arquivos para pasta do IIS
-      uses: MadaraUchiha/copy-action@0.0.1
-      with:
-        source: .
-        target: C:\inetpub\wwwroot\CadastroContatos
+      run: copy .\TechChallangeCadastroCotatos\bin\Release\net8.0\* C:\inetpub\wwwroot\CadastroContatos\
