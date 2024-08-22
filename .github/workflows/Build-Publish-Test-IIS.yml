@@ -26,4 +26,4 @@ jobs:
       run: dotnet build --configuration Release --no-restore C:\FIAP\T-Challenge-Fase-2-Gr-32\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
       working-directory: output
     - name: Copiar arquivos para pasta do IIS
-      run: copy .\output\* C:\inetpub\wwwroot\CadastroContatos\
+      run: copy C:\FIAP\T-Challenge-Fase-2-Gr-32\TechChallangeCadastroCotatos\bin\Release\net8.0\* C:\inetpub\wwwroot\CadastroContatos\
