@@ -11,9 +11,11 @@ on:
 
 jobs:
   build:
+  
     runs-on: self-hosted
+    
     steps:
-    - name: Baixar o projeto do repositório
+
     - uses: actions/checkout@v4
     - name: Instalar .NET
       uses: actions/setup-dotnet@v4
