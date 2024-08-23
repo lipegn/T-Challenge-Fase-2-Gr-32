@@ -45,6 +45,7 @@ namespace TechChallangeCadastroContatosAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
+
         }
     }
 }
