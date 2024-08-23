@@ -26,3 +26,5 @@ jobs:
       run: dotnet build --configuration Release --no-restore .\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
     - name: Copiar arquivos para pasta do IIS
       run: copy .\TechChallangeCadastroCotatos\bin\Release\net8.0\* C:\inetpub\wwwroot\CadastroContatos\
+    - name: Executar testes unitário e de integração
+      run: dotnet test .\TechChallangeCadastroCotatos
