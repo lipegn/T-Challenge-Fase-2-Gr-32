@@ -26,6 +26,6 @@ jobs:
     - name: Compilar o projeto
       run: dotnet build --configuration Release --no-restore .\TechChallangeCadastroCotatos\TechChallangeCadastroContatosAPI.csproj
     - name: Copiar arquivos para pasta do IIS
-      run: xcopy /s .\TechChallangeCadastroCotatos\bin\Release\net8.0\* C:\inetpub\wwwroot\CadastroContatos\ /Y
+      run: xcopy /s .\TechChallangeCadastroCotatos\bin\Release\net8.0\* C:\inetpub\wwwroot\CadastroContatos\ /Y /C
     - name: Executar testes unitários e de integração
       run: dotnet test .\TechChallangeCadastroCotatos
