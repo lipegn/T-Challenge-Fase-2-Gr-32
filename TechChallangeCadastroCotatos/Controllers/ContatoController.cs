@@ -207,30 +207,5 @@ namespace TechChallangeCadastroContatosAPI.Controllers
                 return BadRequest(e);
             }
         }
-
-        [HttpGet("/TestePipe")]
-        public IActionResult TestePipe()
-        {
-            try
-            {
-                return Ok();
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e);
-            }
-        }
-        [HttpGet("/TestePipe2")]
-        public IActionResult TestePipe2()
-        {
-            try
-            {
-                return Ok();
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e);
-            }
-        }
     }
 }
