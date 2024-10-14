@@ -53,7 +53,7 @@ namespace TechChallangeCadastroContatosAPI.Controllers
         /// </summary>
         /// <param name="loginInput">usuário e senha</param>
         /// <returns>token de autenticação</returns>
-        [HttpPost]
+        [HttpPost("PostRunner")]
         public IActionResult PostRunner([FromBody] LoginInput loginInput)
         {
             if (ModelState.IsValid)
