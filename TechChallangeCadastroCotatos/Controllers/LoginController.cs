@@ -47,42 +47,5 @@ namespace TechChallangeCadastroContatosAPI.Controllers
             }
 
         }
-
-        /// <summary>
-        /// Utilizado para atualizar o pipe via self-runner
-        /// </summary>
-        /// <param name="loginInput">usuário e senha</param>
-        /// <returns>token de autenticação</returns>
-        [HttpPost("PostRunner")]
-        public IActionResult PostRunner([FromBody] LoginInput loginInput)
-        {
-            if (ModelState.IsValid)
-            {
-                if (loginInput.Usuario == "usuario-fiap" && loginInput.Senha == "senha-fiap")
-                {
-                    var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Utils.CHAVE_TOKEN));
-                    var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-
-                    var Sectoken = new JwtSecurityToken(null,
-                      null,
-                      null,
-                      expires: DateTime.Now.AddMinutes(120),
-                      signingCredentials: credentials);
-
-                    var token = new JwtSecurityTokenHandler().WriteToken(Sectoken);
-
-                    return Ok(token);
-                }
-                else
-                {
-                    return Unauthorized("Usuário ou senha incorretos");
-                }
-            }
-            else
-            {
-                return BadRequest(ModelState);
-            }
-
-        }
     }
 }

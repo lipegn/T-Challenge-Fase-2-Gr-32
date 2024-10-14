@@ -208,5 +208,20 @@ namespace TechChallangeCadastroContatosAPI.Controllers
             }
         }
 
+        [Authorize]
+        [HttpDelete("{id:int}")]
+        public IActionResult DeleteRunner([FromRoute] int id)
+        {
+            try
+            {
+                _contatoRepository.Deletar(id);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
     }
 }
