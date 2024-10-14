@@ -208,22 +208,11 @@ namespace TechChallangeCadastroContatosAPI.Controllers
             }
         }
 
-        /// <summary>
-        /// teste pipe
-        /// </summary>
-        /// <param name="id"></param>
-        /// <param name="id">Id do contato</param>
-        /// <returns></returns>
-        /// <response code="200">Sucesso na exclusão do contato</response>
-        /// <response code="500">Não foi possivel excluir o contato</response>
-        /// <response code="401">Token inválido</response>
-        [Authorize]
-        [HttpDelete("{id:int}")]
-        public IActionResult DeleteRunner([FromRoute] int id)
+        [HttpGet("/TestePipe")]
+        public IActionResult TestePipe()
         {
             try
             {
-                _contatoRepository.Deletar(id);
                 return Ok();
             }
             catch (Exception e)
