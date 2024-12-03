@@ -1,11 +1,8 @@
-﻿using Core.Entity;
-using Core.Input;
+﻿using Core.Input;
 using Core.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using RabbitMQ.Client;
-using System.Text.Json;
-using System.Text;
+using MassTransit;
 
 namespace TechChallangeCadastroContatosAPI.Controllers
 {
@@ -14,10 +11,12 @@ namespace TechChallangeCadastroContatosAPI.Controllers
     public class ContatoController : ControllerBase
     {
         private readonly IContatoRepository _contatoRepository;
+        private readonly IBus _bus;
 
-        public ContatoController(IContatoRepository contatoRepository)
+        public ContatoController(IContatoRepository contatoRepository, IBus bus)
         {
             _contatoRepository = contatoRepository;
+            _bus = bus;
         }
 
         /// <summary>
@@ -113,50 +112,14 @@ namespace TechChallangeCadastroContatosAPI.Controllers
         /// <response code="401">Token inválido</response>
         [Authorize]
         [HttpPost]
-        public async  Task<IActionResult> Post([FromBody] ContatoInput input)
+        public async Task<IActionResult> Post([FromBody] ContatoInput input)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    var factory = new ConnectionFactory()
-                    {
-                        HostName = "localhost",
-                        UserName = "guest",
-                        Password = "guest"
-                    };
-
-                    using var connection = await factory.CreateConnectionAsync();
-                    using var channel = await connection.CreateChannelAsync();
-                    {
-                        //está declarando a fila
-                        await channel.QueueDeclareAsync(
-                            queue: "fila-cadastro",
-                            durable: false,
-                            exclusive: false,
-                            autoDelete: false,
-                            arguments: null);
-
-                        //serializa o dado
-                        var message = JsonSerializer.Serialize(
-                            new Contato()
-                            {
-                                Nome = input.Nome,
-                                DDD = input.DDD,
-                                Telefone = Convert.ToInt32(input.Telefone),
-                                Email = input.Email,
-                            });
-
-                        //faz encoding para não perder acentuação
-                        var body = Encoding.UTF8.GetBytes(message);
-
-                        await channel.BasicPublishAsync(
-                            exchange: "",
-                            routingKey: "fila-cadastro",
-                            body: body);
-                    }
-
-                    //_contatoRepository.Cadastrar(contato);
+                    var endpoint = await _bus.GetSendEndpoint(new Uri("queue:FilaCadasto"));
+                    await endpoint.Send(input);
                     return Ok();
                 }
                 else
@@ -191,7 +154,7 @@ namespace TechChallangeCadastroContatosAPI.Controllers
         /// <response code="200">Sucesso na inclusão da alteração do contato na fila-alteracao</response>
         /// <response code="500">Não foi possivel alterar o contato</response>
         /// <response code="401">Token inválido</response>
-        [Authorize]
+        //[Authorize]
         [HttpPut]
         public async Task<IActionResult> Put([FromBody] ContatoUpdateInput input)
         {
@@ -199,42 +162,9 @@ namespace TechChallangeCadastroContatosAPI.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var factory = new ConnectionFactory()
-                    {
-                        HostName = "localhost",
-                        UserName = "guest",
-                        Password = "guest"
-                    };
+                    var endpoint = await _bus.GetSendEndpoint(new Uri("queue:FilaAlteracao"));
+                    await endpoint.Send(input);
 
-                    using var connection = await factory.CreateConnectionAsync();
-                    using var channel = await connection.CreateChannelAsync();
-                    {
-                        //está declarando a fila
-                        await channel.QueueDeclareAsync(
-                            queue: "fila-alteracao",
-                            durable: false,
-                            exclusive: false,
-                            autoDelete: false,
-                            arguments: null);
-
-                        var contato = _contatoRepository.ObterPorId(input.Id);
-                        contato.Nome = input.Nome;
-                        contato.DDD = input.DDD;
-                        contato.Telefone = Convert.ToInt32(input.Telefone);
-                        contato.Email = input.Email;
-                        //_contatoRepository.Alterar(contato);
-
-                        //serializa o dado
-                        var message = JsonSerializer.Serialize(contato);
-
-                        //faz encoding para não perder acentuação
-                        var body = Encoding.UTF8.GetBytes(message);
-
-                        await channel.BasicPublishAsync(
-                            exchange: "",
-                            routingKey: "fila-alteracao",
-                            body: body);
-                    }
                     return Ok();
                 }
                 else
@@ -248,6 +178,11 @@ namespace TechChallangeCadastroContatosAPI.Controllers
             }
         }
 
+        public class IdMessage
+        {
+            public int Id { get; set; }
+        }
+
         /// <summary>
         /// Necessita de autenticação via token para excluir um contato da base de dados
         /// </summary>
@@ -256,43 +191,14 @@ namespace TechChallangeCadastroContatosAPI.Controllers
         /// <response code="200">Sucesso ao inclir o contato para exclusão na fila-exclusao</response>
         /// <response code="500">Não foi possivel excluir o contato</response>
         /// <response code="401">Token inválido</response>
-        [Authorize]
+        //[Authorize]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete([FromRoute] int id)
         {
             try
             {
-                var factory = new ConnectionFactory()
-                {
-                    HostName = "localhost",
-                    UserName = "guest",
-                    Password = "guest"
-                };
-
-                using var connection = await factory.CreateConnectionAsync();
-                using var channel = await connection.CreateChannelAsync();
-                {
-                    //está declarando a fila
-                    await channel.QueueDeclareAsync(
-                        queue: "fila-exclusao",
-                        durable: false,
-                        exclusive: false,
-                        autoDelete: false,
-                        arguments: null);
-
-                    //_contatoRepository.Deletar(id);
-                    //serializa o dado
-                    var message = JsonSerializer.Serialize(id);
-
-                    //faz encoding para não perder acentuação
-                    var body = Encoding.UTF8.GetBytes(message);
-
-                    await channel.BasicPublishAsync(
-                        exchange: "",
-                        routingKey: "fila-exclusao",
-                        body: body);
-                }
-
+                var endpoint = await _bus.GetSendEndpoint(new Uri("queue:FilaExclusao"));
+                await endpoint.Send(new IdMessage { Id = id});
                 return Ok();
             }
             catch (Exception e)
