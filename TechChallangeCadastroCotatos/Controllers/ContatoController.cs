@@ -3,6 +3,7 @@ using Core.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MassTransit;
+using Core.Entity;
 
 namespace TechChallangeCadastroContatosAPI.Controllers
 {
@@ -176,11 +177,6 @@ namespace TechChallangeCadastroContatosAPI.Controllers
             {
                 return BadRequest(e);
             }
-        }
-
-        public class IdMessage
-        {
-            public int Id { get; set; }
         }
 
         /// <summary>

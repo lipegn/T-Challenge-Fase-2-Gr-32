@@ -85,7 +85,7 @@ builder.Services.AddMassTransit(x =>
             h.Username(usuario);
             h.Password(senha);
         });
-        cfg.ConfigureEndpoints(context);
+        //cfg.ConfigureEndpoints(context);
     });
 });
 var app = builder.Build();
