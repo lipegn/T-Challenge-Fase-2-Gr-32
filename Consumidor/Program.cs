@@ -1,8 +1,11 @@
 using Consumidor;
 using Consumidor.Eventos;
 using Core.Entity;
+using Core.Repository;
 using Core.Utils;
+using Infrastructure.Repository;
 using MassTransit;
+using Microsoft.EntityFrameworkCore;
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddHostedService<Worker>();
@@ -17,6 +20,13 @@ var filaExclusao = configuration.GetSection("MassTransit")["FilaExclusao"] ?? st
 var servidor = configuration.GetSection("MassTransit")["Servidor"] ?? string.Empty;
 var usuario = configuration.GetSection("MassTransit")["Usuario"] ?? string.Empty;
 var senha = configuration.GetSection("MassTransit")["Senha"] ?? string.Empty;
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(configuration.GetConnectionString("ConnectionStrings"));
+}, ServiceLifetime.Scoped);
+
+builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
 
 builder.Services.AddMassTransit(x =>
 {
@@ -47,6 +57,7 @@ builder.Services.AddMassTransit(x =>
     x.AddConsumer<AlteracaoContatoConsumidor>();
     x.AddConsumer<ExclusaoContatoConsumidor>();
 });
+
 
 
 var host = builder.Build();
