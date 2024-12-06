@@ -111,7 +111,7 @@ namespace TechChallangeCadastroContatosAPI.Controllers
         /// <response code="200">Sucesso na execução da inclusão do contato na fila-cadastro</response>
         /// <response code="500">Não foi possivel incluir um novo contato</response>
         /// <response code="401">Token inválido</response>
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] ContatoInput input)
         {
