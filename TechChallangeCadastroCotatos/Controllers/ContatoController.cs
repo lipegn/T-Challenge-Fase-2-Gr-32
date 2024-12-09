@@ -1,8 +1,9 @@
-﻿using Core.Entity;
-using Core.Input;
+﻿using Core.Input;
 using Core.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MassTransit;
+using Core.Entity;
 
 namespace TechChallangeCadastroContatosAPI.Controllers
 {
@@ -11,10 +12,12 @@ namespace TechChallangeCadastroContatosAPI.Controllers
     public class ContatoController : ControllerBase
     {
         private readonly IContatoRepository _contatoRepository;
+        private readonly IBus _bus;
 
-        public ContatoController(IContatoRepository contatoRepository)
+        public ContatoController(IContatoRepository contatoRepository, IBus bus)
         {
             _contatoRepository = contatoRepository;
+            _bus = bus;
         }
 
         /// <summary>
@@ -105,26 +108,20 @@ namespace TechChallangeCadastroContatosAPI.Controllers
         /// </remarks>
         /// <param name="input">Objeto do ContatoInput</param>
         /// <returns>Retorna Contato cadastrado</returns>
-        /// <response code="200">Sucesso na execução da inclusão de um novo contato</response>
+        /// <response code="200">Sucesso na execução da inclusão do contato na fila-cadastro</response>
         /// <response code="500">Não foi possivel incluir um novo contato</response>
         /// <response code="401">Token inválido</response>
         [Authorize]
         [HttpPost]
-        public IActionResult Post([FromBody] ContatoInput input)
+        public async Task<IActionResult> Post([FromBody] ContatoInput input)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    var contato = new Contato()
-                    {
-                        Nome = input.Nome,
-                        DDD = input.DDD,
-                        Telefone = Convert.ToInt32(input.Telefone),
-                        Email = input.Email,
-                    };
-                    _contatoRepository.Cadastrar(contato);
-                    return Ok(contato);
+                    var endpoint = await _bus.GetSendEndpoint(new Uri("queue:FilaCadasto"));
+                    await endpoint.Send(input);
+                    return Ok();
                 }
                 else
                 {
@@ -155,24 +152,21 @@ namespace TechChallangeCadastroContatosAPI.Controllers
         /// </remarks>
         /// <param name="input">Objeto de ContatoUpdate</param>
         /// <returns>Contato alterado</returns>
-        /// <response code="200">Sucesso na execução da alteração do contato</response>
+        /// <response code="200">Sucesso na inclusão da alteração do contato na fila-alteracao</response>
         /// <response code="500">Não foi possivel alterar o contato</response>
         /// <response code="401">Token inválido</response>
         [Authorize]
         [HttpPut]
-        public IActionResult Put([FromBody] ContatoUpdateInput input)
+        public async Task<IActionResult> Put([FromBody] ContatoUpdateInput input)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    var contato = _contatoRepository.ObterPorId(input.Id);
-                    contato.Nome = input.Nome;
-                    contato.DDD = input.DDD;
-                    contato.Telefone = Convert.ToInt32(input.Telefone);
-                    contato.Email = input.Email;
-                    _contatoRepository.Alterar(contato);
-                    return Ok(input);
+                    var endpoint = await _bus.GetSendEndpoint(new Uri("queue:FilaAlteracao"));
+                    await endpoint.Send(input);
+
+                    return Ok();
                 }
                 else
                 {
@@ -190,16 +184,17 @@ namespace TechChallangeCadastroContatosAPI.Controllers
         /// </summary>
         /// <param name="id">Id do contato</param>
         /// <returns></returns>
-        /// <response code="200">Sucesso na exclusão do contato</response>
+        /// <response code="200">Sucesso ao inclir o contato para exclusão na fila-exclusao</response>
         /// <response code="500">Não foi possivel excluir o contato</response>
         /// <response code="401">Token inválido</response>
         [Authorize]
         [HttpDelete("{id:int}")]
-        public IActionResult Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
             try
             {
-                _contatoRepository.Deletar(id);
+                var endpoint = await _bus.GetSendEndpoint(new Uri("queue:FilaExclusao"));
+                await endpoint.Send(new IdMessage { Id = id});
                 return Ok();
             }
             catch (Exception e)

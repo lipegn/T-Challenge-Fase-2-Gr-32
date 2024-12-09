@@ -1,6 +1,7 @@
 using Core.Repository;
 using Core.Utils;
 using Infrastructure.Repository;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -16,6 +17,13 @@ var configuration = new ConfigurationBuilder()
     .Build();
 
 var jwtKey = Utils.CHAVE_TOKEN;
+var filaCadastro = configuration.GetSection("MassTransit")["FilaCadastro"] ?? string.Empty;
+var filaAlteracao = configuration.GetSection("MassTransit")["FilaAlteracao"] ?? string.Empty;
+var filaExclusao = configuration.GetSection("MassTransit")["FilaExclusao"] ?? string.Empty;
+var servidor = configuration.GetSection("MassTransit")["Servidor"] ?? string.Empty;
+var usuario = configuration.GetSection("MassTransit")["Usuario"] ?? string.Empty;
+var senha = configuration.GetSection("MassTransit")["Senha"] ?? string.Empty;
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
  .AddJwtBearer(options =>
  {
@@ -68,6 +76,18 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
 
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(servidor, "/", h =>
+        {
+            h.Username(usuario);
+            h.Password(senha);
+        });
+        //cfg.ConfigureEndpoints(context);
+    });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

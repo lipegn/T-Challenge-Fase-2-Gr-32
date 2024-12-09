@@ -1,5 +1,6 @@
 ﻿using Core.Entity;
 using Core.Repository;
+using MassTransit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
@@ -14,8 +15,10 @@ namespace Test.Unitario
         {
             var mockContatoRepository = new Mock<IContatoRepository>();
             mockContatoRepository.Setup(repository => repository.ObterTodos()).Returns(new List<Contato>());
+            var mockBus = new Mock<IBus>();
 
-            var contatoController = new ContatoController(mockContatoRepository.Object);
+
+            var contatoController = new ContatoController(mockContatoRepository.Object, mockBus.Object);
 
             var resultado = Assert.IsType<OkObjectResult>(contatoController.Get());
             Assert.NotNull(resultado);
@@ -29,9 +32,10 @@ namespace Test.Unitario
         {
             var mockContatoRepository = new Mock<IContatoRepository>();
             mockContatoRepository.Setup(repository => repository.ObterTodos()).Throws<System.IO.IOException>();
+            var mockBus = new Mock<IBus>();
 
 
-            var contatoController = new ContatoController(mockContatoRepository.Object);
+            var contatoController = new ContatoController(mockContatoRepository.Object, mockBus.Object);
 
             var resultado = Assert.IsType<BadRequestObjectResult>(contatoController.Get());
             Assert.Equal(StatusCodes.Status400BadRequest, resultado.StatusCode);
@@ -57,8 +61,9 @@ namespace Test.Unitario
 
             var mockContatoRepository = new Mock<IContatoRepository>();
             mockContatoRepository.Setup(repository => repository.ObterTodos()).Returns(new List<Contato>());
+            var mockBus = new Mock<IBus>();
 
-            var contatoController = new ContatoController(mockContatoRepository.Object);
+            var contatoController = new ContatoController(mockContatoRepository.Object, mockBus.Object);
             var resultado = Assert.IsType<OkObjectResult>(contatoController.GetPorDDD(11));
             Assert.NotNull(resultado);
             //Assert.Equal(StatusCodes.Status200OK, resultado.StatusCode);
