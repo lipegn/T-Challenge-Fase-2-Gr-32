@@ -13,11 +13,14 @@ RUN dotnet restore
 #Build and publish a release
 RUN dotnet publish -c Release -o out
 
-#EXPOR A PORTA PARA INTERNET
-EXPOSE 44365
+
 
 #Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /App/TechChallangeCadastroCotatos
 COPY --from=build-env /App/TechChallangeCadastroCotatos/out .
-ENTRYPOINT ["dotnete", "DotNet.Docker.dll"]
+
+#EXPOR A PORTA PARA INTERNET
+EXPOSE 8080
+
+ENTRYPOINT ["dotnet", "TechChallangeCadastroContatosAPI.dll"]

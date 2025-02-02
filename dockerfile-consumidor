@@ -13,11 +13,12 @@ RUN dotnet restore
 #Build and publish a release
 RUN dotnet publish -c Release -o out
 
-#EXPOR A PORTA PARA INTERNET
-EXPOSE 44344
-
 #Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /App/Consumidor
 COPY --from=build-env /App/Consumidor/out .
-ENTRYPOINT ["dotnete", "DotNet.Docker.dll"]
+
+#EXPOR A PORTA PARA INTERNET
+EXPOSE 8080
+
+ENTRYPOINT ["dotnet", "Consumidor.dll"]
