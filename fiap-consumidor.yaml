@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fiap-techchallange-consumidor
+  labels:
+    app: fiap-techchallange-consumidor
+spec:
+  containers:
+    - name: fiap-techchallange-consumidor
+      image: mayasilva/fiap-consumidor:latest
+      ports:
+        - containerPort: 8080
