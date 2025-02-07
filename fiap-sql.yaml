@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fiap-sql-techchallange
+  labels:
+    app: fiap-sql-techchallange
+spec:
+  containers:
+    - name: sql
+      image: mcr.microsoft.com/mssql/server:2022-latest
+      ports:
+        - containerPort: 1433
+      env:
+        - name: "ACCEPT_EULA"
+          value: "Y"
+        - name: "MSSQL_SA_PASSWORD"
+          value: "Passw0rd"
