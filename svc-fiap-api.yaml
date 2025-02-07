@@ -9,4 +9,4 @@ spec:
       targetPort: 8080
       nodePort: 32100
   selector:
-    app: fiap-adm
+    app: fiap-api-techchallange

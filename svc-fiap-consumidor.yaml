@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: scv-techchallange
 spec:
-  type: NodePort
+  type: ClusterIp
   ports:
     - port: 80
       nodePort: 31100
   selector:
-    app: fiap-adm
+    app: fiap-techchallange-consumidor
