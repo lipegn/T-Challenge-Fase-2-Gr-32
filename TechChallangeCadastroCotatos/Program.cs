@@ -77,6 +77,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
 
+var dbContext = builder.Services.BuildServiceProvider().GetService<ApplicationDbContext>();
+dbContext?.Database.Migrate();
+
 builder.Services.AddMassTransit(x =>
 {
     x.UsingRabbitMq((context, cfg) =>
