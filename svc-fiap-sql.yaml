@@ -12,5 +12,6 @@ spec:
       protocol: TCP
       targetPort: 1433
       nodePort: 32200
+
   selector:
     app: fiap-sql-techchallange

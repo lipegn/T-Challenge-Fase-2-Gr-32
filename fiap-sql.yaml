@@ -6,6 +6,12 @@ metadata:
     app: fiap-sql-techchallange
 spec:
   containers:
+    #- name: masstransit-posbooks
+    #  image: masstransit/rabbitmq
+    #  ports:
+    #    - containerPort: 5672
+    #    - containerPort: 15672
+
     - name: sql
       image: mcr.microsoft.com/mssql/server:2022-latest
       ports:
@@ -15,3 +21,7 @@ spec:
           value: "Y"
         - name: "MSSQL_SA_PASSWORD"
           value: "Passw0rd"
+        - name: MSSQL_PID
+          value: "Developer"
+
+

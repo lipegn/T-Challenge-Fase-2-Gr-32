@@ -23,7 +23,7 @@ var senha = configuration.GetSection("MassTransit")["Senha"] ?? string.Empty;
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer(configuration.GetConnectionString("ConnectionStrings"));
+    options.UseSqlServer(configuration.GetConnectionString("ConnectionString"));
 }, ServiceLifetime.Scoped);
 
 builder.Services.AddScoped<IContatoRepository, ContatoRepository>();

@@ -7,6 +7,13 @@ metadata:
 spec:
   containers:
     - name: fiap-api-techchallange
-      image: mayasilva/fiap-contato-api:latest
+      image: fiap-contato-api:v1
       ports:
         - containerPort: 8080
+      env:
+        - name: "CONNECTIONSTRINGS__CONNECTIONSTRING"
+        # scv-sql-techchallange 32200 ;Trust Server Certificate=True
+          value: "Server=localhost,1433;Database=TechChallangeCadastroCotatos;User ID=sa;Password=Passw0rd;TrustServerCertificate=True;"
+
+          # - name: ConnectionStrings__SQLConnection
+          # value: "Server=localhost;Database=PosBooksConsumer;User Id=sa;Password=posServer2024!;TrustServerCertificate=True;"
