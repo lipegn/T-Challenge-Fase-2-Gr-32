@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: scv-menssageria-techchallange
+  labels:
+    app: scv-menssageria-techchallange
+
+spec:
+  type: NodePort
+  ports:
+    - port: 5672
+      name: '5672'
+      protocol: TCP
+      targetPort: 5672
+    - port: 15672
+      name: '15672'
+      protocol: TCP
+      targetPort: 15672
+      nodePort: 31672
+
+  selector:
+    app: fiap-menssageria-techchallange

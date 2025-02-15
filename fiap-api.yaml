@@ -12,8 +12,7 @@ spec:
         - containerPort: 8080
       env:
         - name: "CONNECTIONSTRINGS__CONNECTIONSTRING"
-        # scv-sql-techchallange 32200 ;Trust Server Certificate=True
-          value: "Server=localhost,1433;Database=TechChallangeCadastroCotatos;User ID=sa;Password=Passw0rd;TrustServerCertificate=True;"
+          value: "Server=scv-sql-techchallange,1433;Database=TechChallangeCadastroCotatos;User ID=sa;Password=Passw0rd;TrustServerCertificate=True;"
+        - name: "MassTransit__Servidor"
+          value: "scv-menssageria-techchallange"
 
-          # - name: ConnectionStrings__SQLConnection
-          # value: "Server=localhost;Database=PosBooksConsumer;User Id=sa;Password=posServer2024!;TrustServerCertificate=True;"

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: scv-techchallange
+  name: scv-consumidor-techchallange
 spec:
   type: ClusterIP
   ports:
@@ -9,4 +9,4 @@ spec:
       protocol: TCP
       targetPort: 31100
   selector:
-    app: fiap-techchallange-consumidor
+    app: scv-consumidor-techchallange

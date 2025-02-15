@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fiap-menssageria-techchallange
+  labels:
+    app: fiap-menssageria-techchallange
+spec:
+  containers:
+    - name: rabbitmq
+      image: masstransit/rabbitmq
+      ports:
+        - containerPort: 5672
+        - containerPort: 15672
