@@ -6,7 +6,7 @@ namespace Infrastructure.Repository
 {
     public class ApplicationDbContext : DbContext
     {
-        private readonly string _connectionString;
+        /*private readonly string _connectionString;
 
         public ApplicationDbContext()
         {
@@ -20,10 +20,13 @@ namespace Infrastructure.Repository
         public ApplicationDbContext(string connectionString)
         {
             _connectionString = connectionString;
-        }
+        }*/
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<Contato> Contato { get; set; }
 
+        /*
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -31,7 +34,7 @@ namespace Infrastructure.Repository
                 optionsBuilder.UseSqlServer(_connectionString);
                 //optionsBuilder.UseLazyLoadingProxies();
             }
-        }
+        }*/
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
