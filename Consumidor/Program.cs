@@ -1,8 +1,6 @@
 using Consumidor;
 using Consumidor.Eventos;
-using Core.Entity;
 using Core.Repository;
-using Core.Utils;
 using Infrastructure.Repository;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +10,7 @@ builder.Services.AddHostedService<Worker>();
 
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
+    .AddEnvironmentVariables()
     .Build();
 
 var filaCadastro = configuration.GetSection("MassTransit")["FilaCadastro"] ?? string.Empty;
