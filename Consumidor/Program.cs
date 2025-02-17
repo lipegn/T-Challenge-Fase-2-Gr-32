@@ -1,8 +1,6 @@
 using Consumidor;
 using Consumidor.Eventos;
-using Core.Entity;
 using Core.Repository;
-using Core.Utils;
 using Infrastructure.Repository;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +10,7 @@ builder.Services.AddHostedService<Worker>();
 
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
+    .AddEnvironmentVariables()
     .Build();
 
 var filaCadastro = configuration.GetSection("MassTransit")["FilaCadastro"] ?? string.Empty;
@@ -23,7 +22,7 @@ var senha = configuration.GetSection("MassTransit")["Senha"] ?? string.Empty;
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer(configuration.GetConnectionString("ConnectionStrings"));
+    options.UseSqlServer(configuration.GetConnectionString("ConnectionString"));
 }, ServiceLifetime.Scoped);
 
 builder.Services.AddScoped<IContatoRepository, ContatoRepository>();

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: scv-sql-techchallange
+  labels:
+    app: scv-sql-techchallange
+
+spec:
+  type: NodePort
+  ports:
+    - port: 1433
+      protocol: TCP
+      targetPort: 1433
+      nodePort: 32200
+
+  selector:
+    app: fiap-sql-techchallange

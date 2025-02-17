@@ -14,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
+    .AddEnvironmentVariables()
     .Build();
 
 var jwtKey = Utils.CHAVE_TOKEN;
@@ -23,6 +24,10 @@ var filaExclusao = configuration.GetSection("MassTransit")["FilaExclusao"] ?? st
 var servidor = configuration.GetSection("MassTransit")["Servidor"] ?? string.Empty;
 var usuario = configuration.GetSection("MassTransit")["Usuario"] ?? string.Empty;
 var senha = configuration.GetSection("MassTransit")["Senha"] ?? string.Empty;
+var connectionString = configuration.GetConnectionString("ConnectionString");
+
+Console.WriteLine("CHAVEE >>");
+Console.WriteLine(filaCadastro);
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
  .AddJwtBearer(options =>
@@ -71,10 +76,16 @@ builder.Services.AddSwaggerGen(setup =>
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer(configuration.GetConnectionString("ConnectionStrings"));
+    options.UseSqlServer(connectionString);
 }, ServiceLifetime.Scoped);
 
 builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
+
+//var dbContext = builder.Services.BuildServiceProvider().GetService<ApplicationDbContext>();
+
+//Console.WriteLine("pega dbContex da var do contener : " + dbContext);
+//dbContext?.Database.Migrate();
+
 
 builder.Services.AddMassTransit(x =>
 {
@@ -103,5 +114,11 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+Console.WriteLine(" AEEEE >>>> MIGRATION");
+Console.WriteLine(connectionString);
+Console.WriteLine(" AEEEE >>>> CONNECTION STRING");
+await using (var scope = app.Services.CreateAsyncScope())
+await scope.ServiceProvider.GetRequiredService<ApplicationDbContext>().Database.MigrateAsync();
 
 app.Run();
